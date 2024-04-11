@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container bg-gradient-to-r from-blue-400 to-indigo-500 rounded-lg overflow-hidden shadow-xl max-w-sm">
+            <h1 class="text-lg font-semibold mb-2 text-white">Enter a guess between 0 to 100</h1>
+            <form>
+                <input type="number" placeholder="Enter a number" min="0" max="100">
+
+            </form>
+
+            <button class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded">Submit</button>
+            <button class="duration-300 bg-black/0 hover:bg-black/25 text-white font-bold py-2 px-4 rounded">Restart</button>
+            
+            <p class="result text-lg font-semibold mb-2 text-white"></p>
+            <p class="text-lg font-semibold mb-2 text-white all-guesses"> <span></span></p>
+
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
